@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia;
+    color:black;
+}
+
+.header-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #ccb7f1;
+    background-image: url('./img/foto.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 112px;
+    position: relative;
+}
+h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+h2{
+    margin-top: -20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.checkbox-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999; /*faz com que o x fique na frente*/
+    transition: 400ms ease-in-out 0s;
+}
+/*barrinhas do menu*/
+.checkbox .trace{
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+
+.checkbox .trace:nth-child(1){
+    top: 26px;
+    transform: rotate(0); 
+}
+
+.checkbox .trace:nth-child(2){
+    top: 46px;
+    transform: rotate(0); 
+}
+
+.checkbox .trace:nth-child(3){
+    top: 66px;
+    transform: rotate(0); 
+}
+
+/*serve para tirar a caixinha*/
+#toggle{
+    display: none;
+}
+
+.menu{
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    background-color: transparent; /*div sem cor pois a cor é do box-shadow*/
+    height: 4px;
+    width: 0px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 0px #ffffff;
+    z-index: -1;
+    transition: 400ms ease-in-out 0s;
+}
+
+/*itens que so aparecem com o toque do menu*/
+.menu-items{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms ease-in-out 0s; /*mesma tansição para n haver erro, dando a impressao q estao dentro do menu*/
+}
+
+.menu-items ul{
+    list-style-type: none;
+}
+
+.menu-items ul li a{
+    margin: 10px 0;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 40px;
+}
+/*rotação para o x*/
+#toggle:checked + .checkbox .trace:nth-child(1){
+    transform: rotate(45deg);
+    top: 47px;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(2){
+    transform: translate(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(3){
+    transform: rotate(-45deg);
+    top: 48px;
+}
+/*serve para n deixar buracos no x*/
+#toggle:checked + .checkbox{
+    background-color: #ffffff;
+}
+
+#toggle:checked ~ .menu{
+    box-shadow: 0px 0px 0px 100vmax #ffffff;
+    z-index: 1;
+}/*o ~ serve para tds os itens que tenham a classe menu do toggle*/
+
+/*deixando os itens visiveis*/
+#toggle:checked ~ .menu-items{
+    visibility: visible;
+    opacity: 1;
+}
+
+/*mexendo na main*/
+
+/*deixando mais arrumado*/
+.container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /*espaço de margem*/
+    margin: 3rem 0; /*não ficar pregado no header e footer*/
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}/*deixa o texto ao lado*/
+
+/*mexendo na bolinha*/
+.card{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./img/fot.png');
+    background-position: center;
+    background-size: cover; /*pega tudo*/
+    background-repeat: no-repeat;
+    filter: grayscale(0.5); /*faz com que fique cinza*/
+    cursor: pointer;
+    transition: 0.5s ease-in-out ;
+}
+
+/*mexendo no texto*/
+.card-text{
+    margin-top: 50px;
+    width: 60%;
+    letter-spacing: 1px;
+}
+
+.card-text h2{
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.card:hover{
+    filter: unset; /*faz perder o cinza que adc antes*/
+}
+
+.footer {
+    width: 101%;
+    height: 100px;
+    background-color: #ccb7f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer h2{
+    margin-top: 1%;
+    color: black;
+    letter-spacing: 1px;
+    text-transform:inherit;
+}
