@@ -59,7 +59,7 @@ h2{
 .checkbox .trace{
     width: 50px;
     height: 2px;
-    background-color: black;
+    background-color: #ffffff;
     position: absolute;
     border-radius: 4px;
     transition: 0.5s ease-in-out;
