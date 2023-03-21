@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 
+
 body{
     margin: 0;
     padding: 0;
@@ -25,7 +26,7 @@ body{
 }
 h1{
     color: #ffffff;
-    font-size: 50px;
+    font-size:50px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -36,6 +37,7 @@ h2{
     text-transform: uppercase;
     letter-spacing: 3px;
 }
+
 
 .checkbox-container{
     display: flex;
@@ -198,6 +200,7 @@ h2{
 
 /*mexendo no texto*/
 .card-text{
+    font-size: 15px;
     color: #5a189a;
     margin-top: 50px;
     width: 60%;
@@ -231,4 +234,31 @@ h2{
     color: #ffffff;
     letter-spacing: 1px;
     text-transform:inherit;
+}
+
+
+@media screen and (max-width: 768px){
+    .card{
+        width: 10%;
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .header-container{
+        padding: 20px;
+    }
+
+    .header-container h1{
+        font-size: 40px;
+    }
+
+    .header-container h2{
+        font-size: 15px;
+        width: 530px;
+        overflow-wrap: break-word;  
+        word-wrap: break-word; 
+        word-break: break-word;
+    }
+
 }
