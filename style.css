@@ -244,21 +244,103 @@ h2{
     }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1325px){
     .header-container{
-        padding: 20px;
+        padding: 50px;
     }
 
     .header-container h1{
-        font-size: 40px;
+        font-size: 48px;
     }
-
+    
     .header-container h2{
-        font-size: 15px;
-        width: 530px;
+        font-size: 20px;
+        width: 700px;
         overflow-wrap: break-word;  
         word-wrap: break-word; 
         word-break: break-word;
     }
+}
 
+@media screen and (max-width: 1215px){
+    .header-container{
+        padding: 40px;
+    }
+
+    .header-container h1{
+        font-size: 48px;
+    }
+    
+    .header-container h2{
+        font-size: 20px;
+        width: 660px;
+        overflow-wrap: break-word;  
+        word-wrap: break-word; 
+        word-break: break-word;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .header-container{
+        padding: 38px;
+    }
+
+    .header-container h1{
+        font-size: 48px;
+
+    }
+    
+    .header-container h2{
+        font-size: 20px;
+        width: 630px;
+        overflow-wrap: break-word;  
+        word-wrap: break-word; 
+        word-break: break-word;
+    }
+}
+
+
+@media screen and (max-width: 1020px){
+    .header-container{
+        padding: 35px;
+    }
+    
+    .header-container h1{
+        font-size: 47px;
+        width: 600px;
+        overflow-wrap: break-word;  
+        word-wrap: break-word; 
+        word-break: break-word;
+        
+    }
+
+    .header-container h2{
+        font-size: 18px;
+        width: 580px;
+        overflow-wrap: break-word;  
+        word-wrap: break-word; 
+        word-break: break-word;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px){
+    .header-container{
+        padding: 35px;
+    }
+
+    .header-container h1{
+        font-size: 40px;
+
+        
+    }
+
+    .header-container h2{
+        font-size: 17px;
+        width: 300px;
+        overflow-wrap: break-word;  
+        word-wrap: break-word; 
+        word-break: break-word;
+    }
 }
