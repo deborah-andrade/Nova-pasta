@@ -331,9 +331,8 @@ h2{
     }
 
     .header-container h1{
-        font-size: 40px;
-
-        
+        font-size: 47px;
+     
     }
 
     .header-container h2{
@@ -343,4 +342,148 @@ h2{
         word-wrap: break-word; 
         word-break: break-word;
     }
+}
+
+@media screen and (max-width: 995px){
+    .header-container{
+        padding: 35px;
+    }
+
+    .header-container h1{
+        font-size: 45px;
+     
+    }
+
+    .header-container h2{
+        font-size: 17px;
+        width: 300px;
+        overflow-wrap: break-word;  
+        word-wrap: break-word; 
+        word-break: break-word;
+    }
+}
+
+@media screen and (max-width: 955px){
+    .header-container{
+        padding: 30px;
+    }
+
+    .header-container h1{
+        font-size: 42px;
+     
+    }
+
+    .header-container h2{
+        font-size: 17px;
+        width: 300px;
+        overflow-wrap: break-word;  
+        word-wrap: break-word; 
+        word-break: break-word;
+    }
+}
+
+@media screen and (max-width: 892px){
+    .header-container{
+        padding: 28px;
+    }
+
+    .header-container h1{
+        font-size: 40px;
+     
+    }
+
+    .header-container h2{
+        font-size: 17px;
+        width: 300px;
+        overflow-wrap: break-word;  
+        word-wrap: break-word; 
+        word-break: break-word;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .header-container{
+        padding: 27px;
+    }
+
+    .header-container h1{
+        font-size: 38px;
+     
+    }
+
+    .header-container h2{
+        font-size: 17px;
+        width: 300px;
+        overflow-wrap: break-word;  
+        word-wrap: break-word; 
+        word-break: break-word;
+    }
+}
+
+@media screen and (max-width: 810px){
+    .header-container{
+        padding: 26px;
+    }
+
+    .header-container h1{
+        font-size: 36px;
+     
+    }
+
+    .header-container h2{
+        font-size: 15px;
+
+    }
+}
+
+@media screen and (max-width: 770px){
+    .header-container{
+        padding: 26px;
+    }
+
+    .header-container h1{
+        font-size: 33px;
+     
+    }
+
+    .header-container h2{
+        font-size: 15px;
+
+    }
+}
+
+@media screen and (max-width: 720px){
+    .header-container{
+        padding: 26px;
+    }
+
+    .header-container h1{
+        font-size: 30px;
+     
+    }
+
+    .header-container h2{
+        font-size: 13x;
+
+    }
+}
+
+@media screen and (max-width: 660px){
+    .header-container{
+        padding: 26px;
+    }
+
+    .header-container h1{
+        font-size: 28px;
+     
+    }
+
+    .header-container h2{
+        font-size: 5x;
+
+    }
+}
+
+@media screen and (max-width: 660px){
+
 }
